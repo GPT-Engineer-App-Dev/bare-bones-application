@@ -1,27 +1,14 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 
-const Index = () => {
+const HelloWorldPage = () => {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-6">Welcome to Our App</h1>
-      <Card className="w-full max-w-md mx-auto">
-        <CardHeader>
-          <CardTitle>Get Started</CardTitle>
-          <CardDescription>Begin your journey with us today!</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p className="text-gray-600">
-            Explore our features and discover how we can help you achieve your goals.
-          </p>
-        </CardContent>
-        <CardFooter>
-          <Button className="w-full">Start Now</Button>
-        </CardFooter>
-      </Card>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-4xl font-bold mb-4">Hello, World!</h1>
+      <p className="text-lg mb-4">Welcome to your new React page using Shadcn UI components.</p>
+      <Button variant="default">Click me!</Button>
     </div>
   );
 };
 
-export default Index;
+export default HelloWorldPage;
