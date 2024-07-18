@@ -1,43 +1,27 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 
-const TestPage = () => {
-  const [inputValue, setInputValue] = React.useState('');
-
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-  };
-
-  const handleSubmit = () => {
-    alert(`You entered: ${inputValue}`);
-    setInputValue('');
-  };
-
+const Index = () => {
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-6">Test Page</h1>
+      <h1 className="text-3xl font-bold mb-6">Welcome to Our App</h1>
       <Card className="w-full max-w-md mx-auto">
         <CardHeader>
-          <CardTitle>Input Test</CardTitle>
-          <CardDescription>Enter some text and submit</CardDescription>
+          <CardTitle>Get Started</CardTitle>
+          <CardDescription>Begin your journey with us today!</CardDescription>
         </CardHeader>
         <CardContent>
-          <Input
-            type="text"
-            placeholder="Enter text here"
-            value={inputValue}
-            onChange={handleInputChange}
-            className="mb-4"
-          />
+          <p className="text-gray-600">
+            Explore our features and discover how we can help you achieve your goals.
+          </p>
         </CardContent>
         <CardFooter>
-          <Button onClick={handleSubmit}>Submit</Button>
+          <Button className="w-full">Start Now</Button>
         </CardFooter>
       </Card>
     </div>
   );
 };
 
-export default TestPage;
+export default Index;
