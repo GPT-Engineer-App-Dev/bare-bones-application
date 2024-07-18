@@ -1,28 +1,12 @@
+import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <header className="bg-primary text-primary-foreground p-4">
-        <h1 className="text-2xl font-bold">My Application</h1>
-      </header>
-
-      <main className="flex-grow p-4">
-        <Card className="max-w-md mx-auto">
-          <CardHeader>
-            <CardTitle>Welcome</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="mb-4">This is a bare-bones application that you can modify and build upon.</p>
-            <Button>Get Started</Button>
-          </CardContent>
-        </Card>
-      </main>
-
-      <footer className="bg-secondary text-secondary-foreground p-4 text-center">
-        <p>&copy; 2023 My Application. All rights reserved.</p>
-      </footer>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-4">Welcome to Our Website</h1>
+      <p className="mb-6">This is a basic template for your React page using Shadcn components.</p>
+      <Button variant="default">Get Started</Button>
     </div>
   );
 };
